@@ -21,10 +21,9 @@ void chooseOperation() {
     print("\nEnd of the Program");
     exit(0);
   }
-  if(i==3){
+  if (i == 3) {
     // AccountHolder.displayRecords();
-  }
-  else{
+  } else {
     print("Please Choose correct option");
     chooseOperation();
   }
@@ -67,19 +66,18 @@ class AccountHolder {
   int mobileNoOfAccountHolder;
   dynamic acoountNoOfAccountHolder;
 
-
   AccountHolder(this.nameOfAccountHolder, this.mobileNoOfAccountHolder,
       this.acoountNoOfAccountHolder);
 }
 
 class BankingSystem {
-  static List<AccountHolder> accountHolderList = [];
-  BankingSystem(String acc_name, int acc_no, dynamic acc_accountno) {   
+  static List accountHolderList = [];
+  BankingSystem(String acc_name, int acc_no, dynamic acc_accountno) {
     print("\nAccount is created");
     print("\nAccount Holder Name: $acc_name");
     print("Mobile no.: $acc_no");
     print("Account Number: $acc_accountno \n");
     accountHolderList.add(AccountHolder(acc_name, acc_no, acc_accountno));
   }
-  
+
 }
